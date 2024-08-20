@@ -1,0 +1,10 @@
+def solution(s):
+    new_s = []
+    for i in range(0, len(s), 2):
+        element = s[i:i + 2]
+        if len(element) == 1:
+            new_s.append(element + '_')
+        else:
+            new_s.append(element)
+
+    return new_s
